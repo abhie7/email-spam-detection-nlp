@@ -106,8 +106,8 @@ def save_emails_to_json(email_data, folder_path):
 
 # Example usage
 if __name__ == "__main__":
-    EMAIL_ACCOUNT = "sendspammailstome@gmail.com"
-    EMAIL_PASSWORD = "vqhz zcfa acez tpuf"
+    EMAIL_ACCOUNT = "<<EMAIL>>"
+    EMAIL_PASSWORD = "<<APP PASSWORD>>"
     IMAP_SERVER = "imap.gmail.com"
     EMAIL_SAVE_FOLDER = "email_extraction/extracted_email"
     FOLDERS_TO_FETCH = ["inbox", "[Gmail]/Spam"]
