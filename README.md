@@ -1,6 +1,5 @@
 
-![Logo](https://imgur.com/xNH3REo.png)
-
+![Logo](https://imgur.com/z5RPfor.png)
 
 # Email Spam Detection NLP Project
 
