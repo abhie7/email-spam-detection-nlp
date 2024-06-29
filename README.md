@@ -1,3 +1,3 @@
 # EMAIL SPAM DETECTION
 
-![Image](https://imgur.com/a/k1sekKr.png)
+![Image](https://imgur.com/458mK6d.png)
