@@ -89,7 +89,7 @@ def save_emails_to_json(email_data, folder_path):
         else:
             os.makedirs(folder_path)
 
-        for email in enumerate(email_data):
+        for email in email_data:  # Removed enumerate as index is not used
             sender = email['sender']
             subject = email['subject']
             date = email['date']
@@ -100,16 +100,16 @@ def save_emails_to_json(email_data, folder_path):
             with open(filepath, 'w') as f:
                 json.dump(email, f, indent=4)
 
-            print(f"Email from {sender} with subject '{subject}' saved to {filepath}")
+            print(f"\nEmail from {sender} with subject '{subject}' saved to {filepath}")
     except Exception as e:
         print(f"An error occurred while saving emails to JSON: {e}")
 
 # Example usage
 if __name__ == "__main__":
-    EMAIL_ACCOUNT = "<<YOUR GMAIL ADDRESS>>"
-    EMAIL_PASSWORD = "<<YOUR APP PASSWORD>>"
+    EMAIL_ACCOUNT = "sendspammailstome@gmail.com"
+    EMAIL_PASSWORD = "vqhz zcfa acez tpuf"
     IMAP_SERVER = "imap.gmail.com"
-    EMAIL_SAVE_FOLDER = "email_extraction/extracted_emails"
+    EMAIL_SAVE_FOLDER = "email_extraction/extracted_email"
     FOLDERS_TO_FETCH = ["inbox", "[Gmail]/Spam"]
 
     mail = connect_to_email(EMAIL_ACCOUNT, EMAIL_PASSWORD, IMAP_SERVER)
