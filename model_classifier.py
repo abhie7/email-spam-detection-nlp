@@ -5,8 +5,8 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 # Loading my fine-tuned model and tokenizer
 model_name = "JrX44/gemma-2b-it-fine-tune-email-spam"
-model = AutoModelForSequenceClassification.from_pretrained(model_name,token='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')
-tokenizer = AutoTokenizer.from_pretrained(model_name,token='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')
+model = AutoModelForSequenceClassification.from_pretrained(model_name,token='<<HF_TOKEN>>')
+tokenizer = AutoTokenizer.from_pretrained(model_name,token='<<HF_TOKEN>>')
 
 def load_json_from_file(filepath):
     with open(filepath, 'r') as f:
