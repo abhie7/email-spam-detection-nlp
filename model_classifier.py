@@ -3,10 +3,10 @@ import json
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-# Load your pretrained model and tokenizer
-model_name = "h-e-l-l-o/email-spam-classification-merged"
-model = AutoModelForSequenceClassification.from_pretrained(model_name,token='<<HF_TOKEN>>')
-tokenizer = AutoTokenizer.from_pretrained(model_name,token='<<HF_TOKEN>>')
+# Loading my fine-tuned model and tokenizer
+model_name = "JrX44/gemma-2b-it-fine-tune-email-spam"
+model = AutoModelForSequenceClassification.from_pretrained(model_name,token='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')
+tokenizer = AutoTokenizer.from_pretrained(model_name,token='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')
 
 def load_json_from_file(filepath):
     with open(filepath, 'r') as f:
@@ -32,7 +32,7 @@ def classify_email_as_spam(email):
 
 # Directory where JSON files are stored and where results will be saved
 INPUT_DIRECTORY = "./email_extraction/extracted_emails"
-OUTPUT_DIRECTORY = "./classified_emails"
+OUTPUT_DIRECTORY = "./output"
 
 # List all JSON files in the directory
 json_files = [f for f in os.listdir(INPUT_DIRECTORY) if f.endswith('.json')]
