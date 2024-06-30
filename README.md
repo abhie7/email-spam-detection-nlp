@@ -37,7 +37,7 @@ This project aims to detect spam emails using a fine-tuned NLP model. It involve
 
 ### Model
 
-- **Pre-trained Model**: [`h-e-l-l-o/email-spam-classification-merged`](https://huggingface.co/h-e-l-l-o/email-spam-classification-merged)
+- **Pre-trained Model**: [`google/gemma-2b-it`](https://huggingface.co/google/gemma-2b-it)
 
 ### Dataset used to Fine-tune my Model
 
